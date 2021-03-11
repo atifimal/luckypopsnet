@@ -4,16 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Luckypops ~</title>
-        
-        <!--CSS-->
-        <link href="assets/css/bootstrap.css" rel="stylesheet">
-        <link href="assets/css/style.css" rel="stylesheet">
-        
-        <!--JS-->
-        <script src="assets/js/jquery-3.6.0.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
+        <?php include './non-page/addons.php'; ?>
     </head>
     <body>
+        <?php include './non-page/site-logo.php'; ?>
+        <div class="text-center page-heading">
+            <h1>Download</h1>
+        </div>
         <?php include './non-page/menu.php'; ?>
     </body>
 </html>
