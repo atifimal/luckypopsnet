@@ -15,6 +15,12 @@ body {
     border-right: 2px solid #4d044d;
 }
 
+.menu-selected {
+    background-color: #065b72;
+    border-top: 2px solid #0cb4e1;
+    border-right: 2px solid #043d4d;
+}
+
 .menu-item:hover{
     text-decoration: none;
     width: 250px;
@@ -35,5 +41,21 @@ body {
 }
 
 .site-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100px;
+    cursor: pointer;
+}
+
+@keyframes logo-animation {
+    0% {opacity: 100%;}
+    50% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+
+@keyframes logo-animation-2 {
+    0% {opacity: 0;}
+    50% {opacity: 100%;}
+    100% {opacity: 0;}
 }
