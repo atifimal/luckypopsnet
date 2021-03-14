@@ -12,5 +12,8 @@
             <h1>Homepage</h1>
         </div>
         <?php include './non-page/menu.php'; ?>
+        <div class="container">
+            
+        </div>
     </body>
 </html>

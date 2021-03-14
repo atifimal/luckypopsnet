@@ -1,6 +1,6 @@
 <div>
     <img class="site-logo" id="logo-back" src="../assets/img/lucky-logo.png" style="opacity: 0;">
-    <img class="site-logo" id="logo-mid" src="../assets/img/text.png" style="display: none;">
+    <img class="site-logo" id="logo-mid" src="../assets/img/lucky-logo-text.png" style="display: none;">
     <img class="site-logo" id="logo-front" src="../assets/img/lucky-logo-cubes.png">
 </div>
 <script>
@@ -13,5 +13,9 @@
         $('#logo-front').css('animation', 'none');
         $('#logo-mid').css('display', 'none');
         $('#logo-back').css('animation', 'none');
+    });
+    
+    $('.site-logo').on('click', function () {
+        window.location.href = "/";
     });
 </script>

@@ -12,6 +12,9 @@
             <h1>Notes</h1>
         </div>
         <?php include './non-page/menu.php'; ?>
+        <div class="container">
+            
+        </div>
     </body>
     <script>
         $('document').ready(function () {
