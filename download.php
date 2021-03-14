@@ -13,12 +13,31 @@
         </div>
         <?php include './non-page/menu.php'; ?>
         <div class="container">
-            
+
         </div>
     </body>
     <script>
         $('document').ready(function () {
-           $('.menu-download').addClass('menu-selected'); 
+            $('.menu-download').addClass('menu-selected');
+
+            $.ajax({
+                type: "POST",
+                url: '/backend/call.php',
+                data: {
+                    OP_TYPE: 1
+                },
+                success: function (data) {
+                    var list='';
+                    for (var i = 0; i < data.length; i++) {
+                        list += '<span style="color: #FFF;">' + data[i].APP_NAME + '   ' + data[i].URL + '   ' + data[i].INFO + '</span>';
+                    }
+                    $('.container').html(list);
+                },
+                error: function () {
+                    alert("err");
+                },
+                dataType: 'json'
+            });
         });
     </script>
 </html>

@@ -9,7 +9,7 @@
     <body>
         <?php include './non-page/site-logo.php'; ?>
         <div class="text-center page-heading">
-            <h1>Download</h1>
+            <h1>Front-End</h1>
         </div>
         <?php include './non-page/menu.php'; ?>
         <div class="container">
