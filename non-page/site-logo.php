@@ -14,8 +14,4 @@
         $('#logo-mid').css('display', 'none');
         $('#logo-back').css('animation', 'none');
     });
-    
-    $('.site-logo').on('click', function () {
-        window.location.href = "/";
-    });
 </script>

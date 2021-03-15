@@ -7,12 +7,13 @@
         <?php include './non-page/addons.php'; ?>
     </head>
     <body>
+        <?php include './non-page/preloader.php'; ?>
         <?php include './non-page/site-logo.php'; ?>
         <div class="text-center page-heading">
             <h1>Download</h1>
         </div>
         <?php include './non-page/menu.php'; ?>
-        <div class="container">
+        <div class="site-container">
 
         </div>
     </body>
@@ -31,7 +32,7 @@
                     for (var i = 0; i < data.length; i++) {
                         list += '<span style="color: #FFF;">' + data[i].APP_NAME + '   ' + data[i].URL + '   ' + data[i].INFO + '</span>';
                     }
-                    $('.container').html(list);
+                    $('.site-container').html(list);
                 },
                 error: function () {
                     alert("err");

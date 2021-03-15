@@ -7,12 +7,13 @@
         <?php include './non-page/addons.php'; ?>
     </head>
     <body>
+        <?php include './non-page/preloader.php'; ?>
         <?php include './non-page/site-logo.php'; ?>
         <div class="text-center page-heading">
             <h1>Front-End</h1>
         </div>
         <?php include './non-page/menu.php'; ?>
-        <div class="container">
+        <div class="site-container">
             
         </div>
     </body>
