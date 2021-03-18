@@ -15,5 +15,14 @@ if (isset($_POST['OP_TYPE'])) {
         } else {
             echo json_encode($result);
         }
+    } else if ($typ * 1 === 2) {
+        $result = $dcp->addDownload(
+                $_POST['APP_NAME'],$_POST['URL'],$_POST['INFO']);
+
+        if ($result === FALSE) {
+            echo '{"error":-9}';
+        } else {
+            echo json_encode($result);
+        }
     }
 }

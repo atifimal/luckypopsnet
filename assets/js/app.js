@@ -27,7 +27,7 @@ $('document').ready(function () {
         $('.preloader-top-1').css('animation', 'preloader-top 1s 1 reverse forwards');
         $('.preloader-top-2').css('animation', 'preloader-top 0.7s 1 reverse forwards');
         $('.preloader-bottom-1').css('animation', 'preloader-bottom 1s 1 reverse forwards');
-        $('.preloader-bottom-2').css('animation', 'preloader-bottom 0.7s 1 reverse forwards').delay(1200);
+        $('.preloader-bottom-2').css('animation', 'preloader-bottom 0.7s 1 reverse forwards');
         setTimeout(function () {
             window.location.href = cls;
         }, 1200);

@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-position: top;
     font-family: monospace;
+    /*overflow-x: hidden;*/
 }
 
 .menu-item{
@@ -83,6 +84,8 @@ body {
     position: absolute;
     left: 20vw;
     top: 30vh;
+    width: 80vw;
+    padding: 10px;
 }
 
 .preloader-main {
@@ -122,4 +125,33 @@ body {
 @keyframes preloader-bottom {
     0% {top: 50vh;}
     100% {top: 100vh;}
+}
+
+.site-container-list {
+    color: #FFF;
+    width: 100%;
+    background-color: #000;
+    border: 5px solid #720672;
+}
+
+.site-container-list-table {
+    font-size: 1.5em;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.site-container-list-table thead {
+    border-bottom: 2px solid #720672;
+}
+
+.site-container-list-table th, .site-container-list-table td {
+    padding: 10px;
+}
+
+.site-container-list-table tbody tr {
+    cursor: pointer;
+}
+
+.site-container-list-table tbody tr:hover {
+    background-color: #065b72;
 }
